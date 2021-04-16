@@ -4,18 +4,6 @@ let writeOuput = function(text)
 }
 writeOuput ("Done!");
 
-function Cat(name, color)
-{
-    this.name = name;
-    this.color = color;
-}
-
-function Bear(name, color)
-{
-    this.name = name;
-    this.color = color;
-}
-
 class Mamifero
 {
     constructor(name)
@@ -27,7 +15,20 @@ class Mamifero
         return "Look at me, i'm driking milk"
     }
 }
+class Bear extends Mamifero 
+{
+    constructor(name)
+    {
+        super(name);
+    }
+    DrinkMilk() 
+    {
+        return"look at me, i'm eat meat"
+    }
+}
+
 let Mamifero = new Mamifero("Bolinhas");
+let Bear = new Bear("Rogerio")
 
 for (let i= 0; i <Mamifero.length; i++)
 {
